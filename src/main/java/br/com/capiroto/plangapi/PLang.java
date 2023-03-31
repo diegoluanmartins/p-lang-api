@@ -8,7 +8,6 @@ public class PLang {
 
     @Id
     private String id;
-
     private String title;
     private String image;
     private int ranking;
@@ -20,6 +19,10 @@ public class PLang {
         this.title = title;
         this.image = image;
         this.ranking = ranking;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getTitle() {
