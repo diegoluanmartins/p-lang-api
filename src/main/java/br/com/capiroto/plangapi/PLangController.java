@@ -49,6 +49,11 @@ public class PLangController {
         return pLangRepository.save(pLang);
     }
 
+    /**
+     * Delete programming language from MongoDb.
+     * @param id
+     * @return
+     */
     @DeleteMapping(value="/p-langs/{id}")
     public boolean deletePLangById(@PathVariable String id){
         if(!pLangRepository.existsById(id)) {
